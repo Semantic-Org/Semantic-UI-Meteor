@@ -8,7 +8,7 @@ The current version of this package integrates Semantic UI v1.12.0.
 Installation
 ------------
 
-    meteor add semantic:ui flemay:less-autoprefixer
+    meteor add semantic:ui
 
 Usage
 -----
