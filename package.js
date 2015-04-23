@@ -1,6 +1,6 @@
 Package.describe({
   name: 'semantic:ui',
-  version: '1.12.0_1',
+  version: '1.12.0_2',
   summary: 'Official Semantic UI Integration for Meteor',
   git: 'https://github.com/Semantic-Org/Semantic-UI-Meteor.git',
   documentation: 'README.md'
@@ -10,7 +10,7 @@ Package.registerBuildPlugin({
   name: "generateSemanticUi",
   use: [
     'ejson@1.0.6',
-    'semantic:ui-data@1.12.0_1'
+    'semantic:ui-data@1.12.0_2'
   ],
   sources: [
     'semantic-ui.js',
@@ -29,9 +29,4 @@ Package.registerBuildPlugin({
     "lodash": "3.6.0",
     "diff": "1.3.2"
   }
-});
-
-Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.imply('flemay:less-autoprefixer@1.0.1');
 });

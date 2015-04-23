@@ -8,7 +8,7 @@ The current version of this package integrates Semantic UI v1.12.0.
 Installation
 ------------
 
-    meteor add semantic:ui
+    meteor add semantic:ui flemay:less-autoprefixer
 
 Usage
 -----
@@ -92,6 +92,9 @@ Therefore if the file `.custom.semantic.json` does not exist or it is different 
 Dependencies
 ------------
 **[flemay:less-autoprefixer](https://atmospherejs.com/flemay/less-autoprefixer)**: Semantic UI needs autoprefixer to be compiled.
+
+> **Note 1:** You can choose any less-autoprefixer package.
+> **Note 2:** Since the package compiles `LESS` files you don't need the `less` package.
 
 **[semantic:ui-data](https://atmospherejs.com/semantic/ui-data)** is being used to get Semantic UI files.
 
