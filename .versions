@@ -1,8 +1,7 @@
 base64@1.0.3
 ejson@1.0.6
-flemay:less-autoprefixer@1.0.1
 json@1.0.3
 meteor@1.1.6
-semantic:ui@1.12.0_1
-semantic:ui-data@1.12.0_1
+semantic:ui@1.12.0_2
+semantic:ui-data@1.12.0_2
 underscore@1.0.3
