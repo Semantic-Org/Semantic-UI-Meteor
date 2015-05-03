@@ -4,6 +4,22 @@ var sitesData = {};
 
 sitesData.data = [
   
+    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
+  
+    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
+  
+    {"name":"breadcrumb","overrides":["lib/semantic-ui/src/site/collections/breadcrumb.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/breadcrumb.variables.import.less"]},
+  
+    {"name":"form","overrides":["lib/semantic-ui/src/site/collections/form.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/form.variables.import.less"]},
+  
+    {"name":"grid","overrides":["lib/semantic-ui/src/site/collections/grid.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/grid.variables.import.less"]},
+  
+    {"name":"menu","overrides":["lib/semantic-ui/src/site/collections/menu.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/menu.variables.import.less"]},
+  
+    {"name":"message","overrides":["lib/semantic-ui/src/site/collections/message.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/message.variables.import.less"]},
+  
+    {"name":"table","overrides":["lib/semantic-ui/src/site/collections/table.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/table.variables.import.less"]},
+  
     {"name":"button","overrides":["lib/semantic-ui/src/site/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/button.variables.import.less"]},
   
     {"name":"divider","overrides":["lib/semantic-ui/src/site/elements/divider.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/divider.variables.import.less"]},
@@ -31,10 +47,6 @@ sitesData.data = [
     {"name":"segment","overrides":["lib/semantic-ui/src/site/elements/segment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/segment.variables.import.less"]},
   
     {"name":"step","overrides":["lib/semantic-ui/src/site/elements/step.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/step.variables.import.less"]},
-  
-    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
-  
-    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
   
     {"name":"accordion","overrides":["lib/semantic-ui/src/site/modules/accordion.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/accordion.variables.import.less"]},
   
@@ -69,18 +81,6 @@ sitesData.data = [
     {"name":"transition","overrides":["lib/semantic-ui/src/site/modules/transition.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/transition.variables.import.less"]},
   
     {"name":"video","overrides":["lib/semantic-ui/src/site/modules/video.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/video.variables.import.less"]},
-  
-    {"name":"breadcrumb","overrides":["lib/semantic-ui/src/site/collections/breadcrumb.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/breadcrumb.variables.import.less"]},
-  
-    {"name":"form","overrides":["lib/semantic-ui/src/site/collections/form.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/form.variables.import.less"]},
-  
-    {"name":"grid","overrides":["lib/semantic-ui/src/site/collections/grid.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/grid.variables.import.less"]},
-  
-    {"name":"menu","overrides":["lib/semantic-ui/src/site/collections/menu.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/menu.variables.import.less"]},
-  
-    {"name":"message","overrides":["lib/semantic-ui/src/site/collections/message.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/message.variables.import.less"]},
-  
-    {"name":"table","overrides":["lib/semantic-ui/src/site/collections/table.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/table.variables.import.less"]},
   
     {"name":"ad","overrides":["lib/semantic-ui/src/site/views/ad.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/ad.variables.import.less"]},
   

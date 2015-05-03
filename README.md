@@ -3,8 +3,6 @@ Semantic UI for Meteor
 
 This package integrates [Semantic UI](http://semantic-ui.com) into Meteor and lets you configure what parts you need.
 
-The current version of this package integrates Semantic UI v1.12.0.
-
 Installation
 ------------
 
