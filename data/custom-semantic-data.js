@@ -19,13 +19,17 @@ customSemanticData.filterThemes = function(strings, matcherFunc) {
   return filter(this.requiredThemesNames(), strings, matcherFunc);
 };
 
+/**
+  filter returns the strings that match \Wname\W or the provided matcher function.
+*/
 var filter = function(names, strings, matcherFunc) {
   return _.filter(strings, function(s) {
     var match = _.find(names, function(name) {
       if (matcherFunc) {
         return matcherFunc(s, name);
       } else {
-        return s.search(name) != -1;
+        var regex = new RegExp("\\W" + name + "\\W", 'g');
+        return s.match(regex) !== null;
       }
     });
     return match;

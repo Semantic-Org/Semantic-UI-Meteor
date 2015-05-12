@@ -29,7 +29,7 @@ var createSemanticLessFile = function(basePath, customSemanticData) {
   _.each(lines, function(l) {
     if (l.match(/@import/)) {
       var matchedDefinitionName = _.find(definitionsNames, function(d) {
-        return l.search(d) != -1;
+        return l.search("/" + d + ".") != -1;
       });
       if (matchedDefinitionName) {
         newLines.push(l);
