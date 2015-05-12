@@ -4,10 +4,6 @@ var sitesData = {};
 
 sitesData.data = [
   
-    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
-  
-    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
-  
     {"name":"breadcrumb","overrides":["lib/semantic-ui/src/site/collections/breadcrumb.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/breadcrumb.variables.import.less"]},
   
     {"name":"form","overrides":["lib/semantic-ui/src/site/collections/form.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/form.variables.import.less"]},
@@ -48,6 +44,22 @@ sitesData.data = [
   
     {"name":"step","overrides":["lib/semantic-ui/src/site/elements/step.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/step.variables.import.less"]},
   
+    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
+  
+    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
+  
+    {"name":"ad","overrides":["lib/semantic-ui/src/site/views/ad.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/ad.variables.import.less"]},
+  
+    {"name":"card","overrides":["lib/semantic-ui/src/site/views/card.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/card.variables.import.less"]},
+  
+    {"name":"comment","overrides":["lib/semantic-ui/src/site/views/comment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/comment.variables.import.less"]},
+  
+    {"name":"feed","overrides":["lib/semantic-ui/src/site/views/feed.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/feed.variables.import.less"]},
+  
+    {"name":"item","overrides":["lib/semantic-ui/src/site/views/item.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/item.variables.import.less"]},
+  
+    {"name":"statistic","overrides":["lib/semantic-ui/src/site/views/statistic.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/statistic.variables.import.less"]},
+  
     {"name":"accordion","overrides":["lib/semantic-ui/src/site/modules/accordion.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/accordion.variables.import.less"]},
   
     {"name":"chatroom","overrides":["lib/semantic-ui/src/site/modules/chatroom.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/chatroom.variables.import.less"]},
@@ -81,18 +93,6 @@ sitesData.data = [
     {"name":"transition","overrides":["lib/semantic-ui/src/site/modules/transition.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/transition.variables.import.less"]},
   
     {"name":"video","overrides":["lib/semantic-ui/src/site/modules/video.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/video.variables.import.less"]},
-  
-    {"name":"ad","overrides":["lib/semantic-ui/src/site/views/ad.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/ad.variables.import.less"]},
-  
-    {"name":"card","overrides":["lib/semantic-ui/src/site/views/card.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/card.variables.import.less"]},
-  
-    {"name":"comment","overrides":["lib/semantic-ui/src/site/views/comment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/comment.variables.import.less"]},
-  
-    {"name":"feed","overrides":["lib/semantic-ui/src/site/views/feed.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/feed.variables.import.less"]},
-  
-    {"name":"item","overrides":["lib/semantic-ui/src/site/views/item.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/item.variables.import.less"]},
-  
-    {"name":"statistic","overrides":["lib/semantic-ui/src/site/views/statistic.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/statistic.variables.import.less"]},
   
 ];
 

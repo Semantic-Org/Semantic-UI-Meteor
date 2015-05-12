@@ -8,7 +8,7 @@ definitionsData.data = [
   
     {"name":"colorize","js":"lib/semantic-ui/src/definitions/behaviors/colorize.js"},
   
-    {"name":"form","js":"lib/semantic-ui/src/definitions/behaviors/form.js","less":"lib/semantic-ui/src/definitions/collections/form.less"},
+    {"name":"form","js":"lib/semantic-ui/src/definitions/behaviors/form.js","less":"lib/semantic-ui/src/definitions/collections/form.import.less"},
   
     {"name":"state","js":"lib/semantic-ui/src/definitions/behaviors/state.js"},
   
@@ -16,91 +16,91 @@ definitionsData.data = [
   
     {"name":"visit","js":"lib/semantic-ui/src/definitions/behaviors/visit.js"},
   
-    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.less"},
+    {"name":"breadcrumb","less":"lib/semantic-ui/src/definitions/collections/breadcrumb.import.less"},
   
-    {"name":"site","js":"lib/semantic-ui/src/definitions/globals/site.js","less":"lib/semantic-ui/src/definitions/globals/site.less"},
+    {"name":"grid","less":"lib/semantic-ui/src/definitions/collections/grid.import.less"},
   
-    {"name":"breadcrumb","less":"lib/semantic-ui/src/definitions/collections/breadcrumb.less"},
+    {"name":"menu","less":"lib/semantic-ui/src/definitions/collections/menu.import.less"},
   
-    {"name":"grid","less":"lib/semantic-ui/src/definitions/collections/grid.less"},
+    {"name":"message","less":"lib/semantic-ui/src/definitions/collections/message.import.less"},
   
-    {"name":"menu","less":"lib/semantic-ui/src/definitions/collections/menu.less"},
+    {"name":"table","less":"lib/semantic-ui/src/definitions/collections/table.import.less"},
   
-    {"name":"message","less":"lib/semantic-ui/src/definitions/collections/message.less"},
+    {"name":"button","less":"lib/semantic-ui/src/definitions/elements/button.import.less"},
   
-    {"name":"table","less":"lib/semantic-ui/src/definitions/collections/table.less"},
+    {"name":"divider","less":"lib/semantic-ui/src/definitions/elements/divider.import.less"},
   
-    {"name":"accordion","js":"lib/semantic-ui/src/definitions/modules/accordion.js","less":"lib/semantic-ui/src/definitions/modules/accordion.less"},
+    {"name":"flag","less":"lib/semantic-ui/src/definitions/elements/flag.import.less"},
   
-    {"name":"checkbox","js":"lib/semantic-ui/src/definitions/modules/checkbox.js","less":"lib/semantic-ui/src/definitions/modules/checkbox.less"},
+    {"name":"header","less":"lib/semantic-ui/src/definitions/elements/header.import.less"},
   
-    {"name":"dimmer","js":"lib/semantic-ui/src/definitions/modules/dimmer.js","less":"lib/semantic-ui/src/definitions/modules/dimmer.less"},
+    {"name":"icon","less":"lib/semantic-ui/src/definitions/elements/icon.import.less"},
   
-    {"name":"dropdown","js":"lib/semantic-ui/src/definitions/modules/dropdown.js","less":"lib/semantic-ui/src/definitions/modules/dropdown.less"},
+    {"name":"image","less":"lib/semantic-ui/src/definitions/elements/image.import.less"},
   
-    {"name":"modal","js":"lib/semantic-ui/src/definitions/modules/modal.js","less":"lib/semantic-ui/src/definitions/modules/modal.less"},
+    {"name":"input","less":"lib/semantic-ui/src/definitions/elements/input.import.less"},
   
-    {"name":"nag","js":"lib/semantic-ui/src/definitions/modules/nag.js","less":"lib/semantic-ui/src/definitions/modules/nag.less"},
+    {"name":"label","less":"lib/semantic-ui/src/definitions/elements/label.import.less"},
   
-    {"name":"popup","js":"lib/semantic-ui/src/definitions/modules/popup.js","less":"lib/semantic-ui/src/definitions/modules/popup.less"},
+    {"name":"list","less":"lib/semantic-ui/src/definitions/elements/list.import.less"},
   
-    {"name":"progress","js":"lib/semantic-ui/src/definitions/modules/progress.js","less":"lib/semantic-ui/src/definitions/modules/progress.less"},
+    {"name":"loader","less":"lib/semantic-ui/src/definitions/elements/loader.import.less"},
   
-    {"name":"rating","js":"lib/semantic-ui/src/definitions/modules/rating.js","less":"lib/semantic-ui/src/definitions/modules/rating.less"},
+    {"name":"rail","less":"lib/semantic-ui/src/definitions/elements/rail.import.less"},
   
-    {"name":"search","js":"lib/semantic-ui/src/definitions/modules/search.js","less":"lib/semantic-ui/src/definitions/modules/search.less"},
+    {"name":"reveal","less":"lib/semantic-ui/src/definitions/elements/reveal.import.less"},
   
-    {"name":"shape","js":"lib/semantic-ui/src/definitions/modules/shape.js","less":"lib/semantic-ui/src/definitions/modules/shape.less"},
+    {"name":"segment","less":"lib/semantic-ui/src/definitions/elements/segment.import.less"},
   
-    {"name":"sidebar","js":"lib/semantic-ui/src/definitions/modules/sidebar.js","less":"lib/semantic-ui/src/definitions/modules/sidebar.less"},
+    {"name":"step","less":"lib/semantic-ui/src/definitions/elements/step.import.less"},
   
-    {"name":"sticky","js":"lib/semantic-ui/src/definitions/modules/sticky.js","less":"lib/semantic-ui/src/definitions/modules/sticky.less"},
+    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
   
-    {"name":"tab","js":"lib/semantic-ui/src/definitions/modules/tab.js","less":"lib/semantic-ui/src/definitions/modules/tab.less"},
+    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
   
-    {"name":"transition","js":"lib/semantic-ui/src/definitions/modules/transition.js","less":"lib/semantic-ui/src/definitions/modules/transition.less"},
+    {"name":"accordion","less":"lib/semantic-ui/src/definitions/modules/accordion.import.less","js":"lib/semantic-ui/src/definitions/modules/accordion.js"},
   
-    {"name":"video","js":"lib/semantic-ui/src/definitions/modules/video.js","less":"lib/semantic-ui/src/definitions/modules/video.less"},
+    {"name":"checkbox","less":"lib/semantic-ui/src/definitions/modules/checkbox.import.less","js":"lib/semantic-ui/src/definitions/modules/checkbox.js"},
   
-    {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.less"},
+    {"name":"dimmer","less":"lib/semantic-ui/src/definitions/modules/dimmer.import.less","js":"lib/semantic-ui/src/definitions/modules/dimmer.js"},
   
-    {"name":"card","less":"lib/semantic-ui/src/definitions/views/card.less"},
+    {"name":"dropdown","less":"lib/semantic-ui/src/definitions/modules/dropdown.import.less","js":"lib/semantic-ui/src/definitions/modules/dropdown.js"},
   
-    {"name":"comment","less":"lib/semantic-ui/src/definitions/views/comment.less"},
+    {"name":"modal","less":"lib/semantic-ui/src/definitions/modules/modal.import.less","js":"lib/semantic-ui/src/definitions/modules/modal.js"},
   
-    {"name":"feed","less":"lib/semantic-ui/src/definitions/views/feed.less"},
+    {"name":"nag","less":"lib/semantic-ui/src/definitions/modules/nag.import.less","js":"lib/semantic-ui/src/definitions/modules/nag.js"},
   
-    {"name":"item","less":"lib/semantic-ui/src/definitions/views/item.less"},
+    {"name":"popup","less":"lib/semantic-ui/src/definitions/modules/popup.import.less","js":"lib/semantic-ui/src/definitions/modules/popup.js"},
   
-    {"name":"statistic","less":"lib/semantic-ui/src/definitions/views/statistic.less"},
+    {"name":"progress","less":"lib/semantic-ui/src/definitions/modules/progress.import.less","js":"lib/semantic-ui/src/definitions/modules/progress.js"},
   
-    {"name":"button","less":"lib/semantic-ui/src/definitions/elements/button.less"},
+    {"name":"rating","less":"lib/semantic-ui/src/definitions/modules/rating.import.less","js":"lib/semantic-ui/src/definitions/modules/rating.js"},
   
-    {"name":"divider","less":"lib/semantic-ui/src/definitions/elements/divider.less"},
+    {"name":"search","less":"lib/semantic-ui/src/definitions/modules/search.import.less","js":"lib/semantic-ui/src/definitions/modules/search.js"},
   
-    {"name":"flag","less":"lib/semantic-ui/src/definitions/elements/flag.less"},
+    {"name":"shape","less":"lib/semantic-ui/src/definitions/modules/shape.import.less","js":"lib/semantic-ui/src/definitions/modules/shape.js"},
   
-    {"name":"header","less":"lib/semantic-ui/src/definitions/elements/header.less"},
+    {"name":"sidebar","less":"lib/semantic-ui/src/definitions/modules/sidebar.import.less","js":"lib/semantic-ui/src/definitions/modules/sidebar.js"},
   
-    {"name":"icon","less":"lib/semantic-ui/src/definitions/elements/icon.less"},
+    {"name":"sticky","less":"lib/semantic-ui/src/definitions/modules/sticky.import.less","js":"lib/semantic-ui/src/definitions/modules/sticky.js"},
   
-    {"name":"image","less":"lib/semantic-ui/src/definitions/elements/image.less"},
+    {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
-    {"name":"input","less":"lib/semantic-ui/src/definitions/elements/input.less"},
+    {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
   
-    {"name":"label","less":"lib/semantic-ui/src/definitions/elements/label.less"},
+    {"name":"video","less":"lib/semantic-ui/src/definitions/modules/video.import.less","js":"lib/semantic-ui/src/definitions/modules/video.js"},
   
-    {"name":"list","less":"lib/semantic-ui/src/definitions/elements/list.less"},
+    {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
   
-    {"name":"loader","less":"lib/semantic-ui/src/definitions/elements/loader.less"},
+    {"name":"card","less":"lib/semantic-ui/src/definitions/views/card.import.less"},
   
-    {"name":"rail","less":"lib/semantic-ui/src/definitions/elements/rail.less"},
+    {"name":"comment","less":"lib/semantic-ui/src/definitions/views/comment.import.less"},
   
-    {"name":"reveal","less":"lib/semantic-ui/src/definitions/elements/reveal.less"},
+    {"name":"feed","less":"lib/semantic-ui/src/definitions/views/feed.import.less"},
   
-    {"name":"segment","less":"lib/semantic-ui/src/definitions/elements/segment.less"},
+    {"name":"item","less":"lib/semantic-ui/src/definitions/views/item.import.less"},
   
-    {"name":"step","less":"lib/semantic-ui/src/definitions/elements/step.less"},
+    {"name":"statistic","less":"lib/semantic-ui/src/definitions/views/statistic.import.less"},
   
 ];
 
