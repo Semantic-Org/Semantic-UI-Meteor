@@ -4,6 +4,10 @@ var sitesData = {};
 
 sitesData.data = [
   
+    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
+  
+    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
+  
     {"name":"breadcrumb","overrides":["lib/semantic-ui/src/site/collections/breadcrumb.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/breadcrumb.variables.import.less"]},
   
     {"name":"form","overrides":["lib/semantic-ui/src/site/collections/form.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/form.variables.import.less"]},
@@ -43,10 +47,6 @@ sitesData.data = [
     {"name":"segment","overrides":["lib/semantic-ui/src/site/elements/segment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/segment.variables.import.less"]},
   
     {"name":"step","overrides":["lib/semantic-ui/src/site/elements/step.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/step.variables.import.less"]},
-  
-    {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
-  
-    {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
   
     {"name":"accordion","overrides":["lib/semantic-ui/src/site/modules/accordion.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/accordion.variables.import.less"]},
   
