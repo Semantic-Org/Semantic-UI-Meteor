@@ -75,6 +75,10 @@ var requiredThemesFiles = function(themesData, customSemanticData) {
 
   files.overrides = customSemanticData.filterDefinitions(files.overrides);
   files.variables = customSemanticData.filterDefinitions(files.variables);
-  files.assets = customSemanticData.filterDefinitions(files.assets);
+  files.assets = customSemanticData.filterDefinitions(files.assets, function(string, name) {
+    // icon and flag in assets end with a 's'
+    var regex = new RegExp("\\W" + name + "\\w\\W", 'g');
+    return string.match(regex) !== null;
+  });
   return files;
 };
