@@ -28,6 +28,8 @@ definitionsData.data = [
   
     {"name":"button","less":"lib/semantic-ui/src/definitions/elements/button.import.less"},
   
+    {"name":"container","less":"lib/semantic-ui/src/definitions/elements/container.import.less"},
+  
     {"name":"divider","less":"lib/semantic-ui/src/definitions/elements/divider.import.less"},
   
     {"name":"flag","less":"lib/semantic-ui/src/definitions/elements/flag.import.less"},
@@ -66,6 +68,8 @@ definitionsData.data = [
   
     {"name":"dropdown","less":"lib/semantic-ui/src/definitions/modules/dropdown.import.less","js":"lib/semantic-ui/src/definitions/modules/dropdown.js"},
   
+    {"name":"embed","less":"lib/semantic-ui/src/definitions/modules/embed.import.less","js":"lib/semantic-ui/src/definitions/modules/embed.js"},
+  
     {"name":"modal","less":"lib/semantic-ui/src/definitions/modules/modal.import.less","js":"lib/semantic-ui/src/definitions/modules/modal.js"},
   
     {"name":"nag","less":"lib/semantic-ui/src/definitions/modules/nag.import.less","js":"lib/semantic-ui/src/definitions/modules/nag.js"},
@@ -87,8 +91,6 @@ definitionsData.data = [
     {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
     {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
-  
-    {"name":"video","less":"lib/semantic-ui/src/definitions/modules/video.import.less","js":"lib/semantic-ui/src/definitions/modules/video.js"},
   
     {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
   
