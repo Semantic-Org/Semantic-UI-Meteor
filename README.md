@@ -85,7 +85,7 @@ Every time Meteor starts (or refreshes) it calls the package `semantic:ui` to ge
 
 The package has a simple mechanism based on the difference of `custom.semantic.json` and `.custom.semantic.json` to avoid generating all the time the files and folders.
 
-Therefore if the file `.custom.semantic.json` does not exist or it is different than `custom.semantic.json` then it will generate Semantic UI.
+Therefore if the file `.custom.semantic.json` does not exist or it is different than `custom.semantic.json` then it will generate Semantic UI.  You need to do one of these to make it work the first time.
 
 Dependencies
 ------------
