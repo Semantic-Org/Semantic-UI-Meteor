@@ -2,6 +2,6 @@ base64@1.0.3
 ejson@1.0.6
 json@1.0.3
 meteor@1.1.6
-semantic:ui@2.0.4
-semantic:ui-data@2.0.4
+semantic:ui@2.0.5
+semantic:ui-data@2.0.5
 underscore@1.0.3
