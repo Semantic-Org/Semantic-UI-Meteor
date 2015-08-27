@@ -18,6 +18,15 @@ Usage
 
 > Note: if you are happy with the default values you will need to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
 
+Customizing
+------------------
+
+The easiest way to customize the look of your site is by modifying theme variables in the `/site` directory (which will override the template's variables).
+
+A comprehensive list of variables does not exist at the moment, but you can browse https://github.com/Semantic-Org/Semantic-UI/tree/master/src/themes/default to see which variables are available for each `collection`, `element`, `module` and `view`.
+
+Site wide settings can be set in [`globals/site.variables.import.less`](https://github.com/Semantic-Org/Semantic-UI/blob/master/src/themes/default/globals/site.variables). This file can be used for some interesting things as well, like importing Google fonts.
+
 custom.semantic.json
 --------------------
 
