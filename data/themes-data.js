@@ -4,9 +4,9 @@ var themesData = {};
 
 themesData.data = [
   
-    {"name":"amazon","overrides":["lib/semantic-ui/src/themes/amazon/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/amazon/elements/button.variables.import.less","lib/semantic-ui/src/themes/amazon/globals/site.variables.import.less"],"assets":[]},
-  
     {"name":"basic","overrides":["lib/semantic-ui/src/themes/basic/collections/table.overrides.import.less","lib/semantic-ui/src/themes/basic/elements/button.overrides.import.less","lib/semantic-ui/src/themes/basic/elements/icon.overrides.import.less","lib/semantic-ui/src/themes/basic/elements/step.overrides.import.less","lib/semantic-ui/src/themes/basic/globals/reset.overrides.import.less","lib/semantic-ui/src/themes/basic/modules/progress.overrides.import.less","lib/semantic-ui/src/themes/basic/views/card.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/basic/collections/table.variables.import.less","lib/semantic-ui/src/themes/basic/elements/button.variables.import.less","lib/semantic-ui/src/themes/basic/elements/icon.variables.import.less","lib/semantic-ui/src/themes/basic/elements/step.variables.import.less","lib/semantic-ui/src/themes/basic/globals/reset.variables.import.less","lib/semantic-ui/src/themes/basic/modules/progress.variables.import.less","lib/semantic-ui/src/themes/basic/views/card.variables.import.less"],"assets":["lib/semantic-ui/src/themes/basic/assets/fonts/icons.eot","lib/semantic-ui/src/themes/basic/assets/fonts/icons.svg","lib/semantic-ui/src/themes/basic/assets/fonts/icons.ttf","lib/semantic-ui/src/themes/basic/assets/fonts/icons.woff"]},
+  
+    {"name":"amazon","overrides":["lib/semantic-ui/src/themes/amazon/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/amazon/elements/button.variables.import.less","lib/semantic-ui/src/themes/amazon/globals/site.variables.import.less"],"assets":[]},
   
     {"name":"bookish","overrides":["lib/semantic-ui/src/themes/bookish/elements/header.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/bookish/elements/header.variables.import.less"],"assets":[]},
   
@@ -36,9 +36,9 @@ themesData.data = [
   
     {"name":"pulsar","overrides":["lib/semantic-ui/src/themes/pulsar/elements/loader.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/pulsar/elements/loader.variables.import.less"],"assets":[]},
   
-    {"name":"resetcss","overrides":["lib/semantic-ui/src/themes/resetcss/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/resetcss/globals/reset.variables.import.less"],"assets":[]},
-  
     {"name":"raised","overrides":["lib/semantic-ui/src/themes/raised/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/raised/elements/button.variables.import.less"],"assets":[]},
+  
+    {"name":"resetcss","overrides":["lib/semantic-ui/src/themes/resetcss/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/resetcss/globals/reset.variables.import.less"],"assets":[]},
   
     {"name":"round","overrides":["lib/semantic-ui/src/themes/round/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/themes/round/elements/button.variables.import.less"],"assets":[]},
   
