@@ -36,7 +36,7 @@ var generate = function(customJsonFile) {
       definitionsGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.definitionsData);
       themesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData);
       sitesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.sitesData);
-      fileHandler.writeTextFile(basePath, '.custom.semantic.json', customJsonFile);
+      fileHandler.writeTextFile(basePath, '.custom.semantic.json', customJsonContent);
     }
     // Always generate assets
     themesGenerator.generateAssets(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData, customJsonFile);

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'semantic:ui',
-  version: '2.1.4_3',
+  version: '2.1.4_5',
   summary: 'Official Semantic UI Integration for Meteor',
   git: 'git@github.com:Semantic-Org/Semantic-UI-Meteor.git',
   documentation: 'README.md'
@@ -9,9 +9,9 @@ Package.describe({
 Package.registerBuildPlugin({
   name: "generateSemanticUi",
   use: [
-    'ecmascript',
+    'ecmascript@0.1.5',
     'ejson@1.0.6',
-    'semantic:ui-data@2.1.4_3'
+    'semantic:ui-data@2.1.4_5'
   ],
   sources: [
     'semantic-ui.js',
