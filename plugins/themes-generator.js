@@ -7,15 +7,15 @@ themesGenerator = {};
 /**
   Always generates assets everytime the server restarts or refreshes
 */
-themesGenerator.generateAssets = function(basePath, customSemanticData, themesData, compileStep) {
+themesGenerator.generateAssets = function(basePath, customSemanticData, themesData, customJsonFile) {
   var themesFiles = requiredThemesFiles(themesData, customSemanticData);
-  createAssetFiles(compileStep, themesFiles.assets);
+  createAssetFiles(customJsonFile, themesFiles.assets);
 };
 
 /**
   Generates the themes folder.
 */
-themesGenerator.generate = function(basePath, customSemanticData, themesData, compileStep) {
+themesGenerator.generate = function(basePath, customSemanticData, themesData) {
   cleanUp(basePath);
 
   var themesFiles = requiredThemesFiles(themesData, customSemanticData);
@@ -33,9 +33,9 @@ var cleanUp = function(basePath) {
   fileHandler.removeFile(path.join(basePath, 'theme.import.less'));
 };
 
-var createAssetFiles = function(compileStep, assetsFiles) {
+var createAssetFiles = function(customJsonFile, assetsFiles) {
   _.each(assetsFiles, function(filePath) {
-    compileStep.addAsset({
+    customJsonFile.addAsset({
       path: filePath,
       data: fileHandler.getBinaryFileBuffer(filePath)
     });

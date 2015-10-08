@@ -9,6 +9,7 @@ Package.describe({
 Package.registerBuildPlugin({
   name: "generateSemanticUi",
   use: [
+    'ecmascript',
     'ejson@1.0.6',
     'semantic:ui-data@2.1.4_3'
   ],
@@ -29,4 +30,8 @@ Package.registerBuildPlugin({
     "lodash": "3.6.0",
     "diff": "1.3.2"
   }
+});
+
+Package.onUse(function (api) {
+  api.use('isobuild:compiler-plugin@1.0.0');
 });

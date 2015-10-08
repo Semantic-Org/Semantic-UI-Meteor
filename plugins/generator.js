@@ -1,45 +1,53 @@
-var _ = Npm.require('lodash');
-var path = Npm.require('path');
-var diff = Npm.require('diff');
+const _ = Npm.require('lodash');
+const path = Npm.require('path');
+const diff = Npm.require('diff');
 
-var handler = function (compileStep, isLiterate) {
-  var basePath = path.dirname(compileStep._fullInputPath);
-  var customJsonFile = compileStep.read().toString('utf8');
-  try {
-    generate(compileStep, basePath, customJsonFile);
+Plugin.registerCompiler({
+  extensions: ['semantic.json'],
+  archMatching: 'web'
+}, () => new SemanticGenerator());
 
-  } catch (error) {
-    compileStep.error({
-      message: "Semantic UI Generator: " + error.message,
-      sourcePath: error.filename || compileStep.inputPath,
-      line: error.line,
-      column: error.column + 1
-    });
-    return;
+class SemanticGenerator {
+  processFilesForTarget(files) {
+    var customJsonFile = files[0];
+    try {
+      generate(customJsonFile);
+    } catch (error) {
+      customJsonFile.error({
+        message: "Semantic UI Generator: " + error.message,
+        sourcePath: error.filename || customJsonFile.getPathInPackage(),
+        line: error.line,
+        column: error.column
+      });
+      return;
+    }
   }
-};
+}
 
-var generate = function(compileStep, basePath, customJsonFile) {
-  if (customJsonFile !== '') {
-    semanticUiPackage.customSemanticData.data = JSON.parse(customJsonFile);
+var generate = function(customJsonFile) {
+  var customJsonContent = customJsonFile.getContentsAsString();
+  var basePath = customJsonFile.getDirname();
 
-    if (isGeneratingNeeded(compileStep, basePath, customJsonFile)) {
+  if (customJsonContent !== '') {
+    semanticUiPackage.customSemanticData.data = JSON.parse(customJsonContent);
+
+    if (isGeneratingNeeded(basePath, customJsonContent)) {
       semanticUiPackage.customSemanticData.validate(semanticUiPackage.definitionsData, semanticUiPackage.themesData);
       definitionsGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.definitionsData);
-      themesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData, compileStep);
+      themesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData);
       sitesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.sitesData);
       fileHandler.writeTextFile(basePath, '.custom.semantic.json', customJsonFile);
     }
     // Always generate assets
-    themesGenerator.generateAssets(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData, compileStep);
+    themesGenerator.generateAssets(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData, customJsonFile);
   } else {
     customJsonGenerator.generate(basePath, semanticUiPackage.definitionsData, semanticUiPackage.themesData);
     fileHandler.writeTextFile(basePath, '.custom.semantic.json', fileHandler.readTextFile(basePath, 'custom.semantic.json'));
   }
 };
 
-var isGeneratingNeeded = function(compileStep, basePath, customJsonFile) {
-  if (customJsonFile === '') {
+var isGeneratingNeeded = function(basePath, customJsonContent) {
+  if (customJsonContent === '') {
     return true;
   }
   if (!fileHandler.fileExists(basePath, '.custom.semantic.json')) {
@@ -54,9 +62,7 @@ var isGeneratingNeeded = function(compileStep, basePath, customJsonFile) {
   } catch (error) {
     return true;
   }
-  var diffResult =  diff.diffJson(dotCustomJson, JSON.parse(customJsonFile));
+  var diffResult =  diff.diffJson(dotCustomJson, JSON.parse(customJsonContent));
 
   return diffResult.length == 1 ? false : true;
 };
-
-Plugin.registerSourceHandler("semantic.json", {archMatching: 'web'}, handler);
