@@ -18,6 +18,34 @@ Usage
 
 > Note: if you are happy with the default values you will need to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
 
+Getting Started & Initializing Modules
+-----
+Semantic UI requries some components to be initialized or they will not work (Dropdowns, Menus, Accordions, etc)
+Refer to the Usage sections in a module on how to initialize each element eg: [Semantic UI Accordion Usage](http://semantic-ui.com/modules/accordion.html#/usage)
+
+Example of initializing a dropdown using a template helper
+```
+Template.myDropdown.rendered = function() {
+  // be sure to use this.$ so it is scoped to the template instead of to the window
+  this.$('.ui.dropdown').dropdown({on: 'hover'});
+  // other SUI modules initialization
+};
+```
+
+Abstracted version which you use on any template helper
+```
+initAccordions(templ) {
+  template.$('.ui.accordion').accordion();
+}
+initDropdowns(template) {
+  template.$('.ui.dropdown').dropdown({on: 'hover'});
+}
+
+Template.myDropdown.rendered = function() {
+  initDropdowns(this);
+}
+```
+
 custom.semantic.json
 --------------------
 
