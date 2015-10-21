@@ -6,7 +6,7 @@ This package integrates [Semantic UI](http://semantic-ui.com) into Meteor and le
 Installation
 ------------
 
-    meteor add semantic:ui flemay:less-autoprefixer
+    meteor add semantic:ui flemay:less-autoprefixer jquery
 
 Usage
 -----
