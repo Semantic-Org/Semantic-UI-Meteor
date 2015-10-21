@@ -17,8 +17,6 @@ Usage
 4. otherwise edit `custom.semantic.json` (which has now been populated) to select only the definitions and themes you want
 5. save the file and it will generate Semantic UI
 
-> Note: if you are happy with the default values you will need to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
-
 custom.semantic.json
 --------------------
 
