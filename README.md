@@ -11,10 +11,11 @@ Installation
 Usage
 -----
 
-1. create an empty `custom.semantic.json` file somewhere in your project. For example `/client/lib/semantic-ui/custom.semantic.json`.
+1. create an empty `custom.semantic.json` file within your client library folder. suggested location of `/client/lib/semantic-ui/custom.semantic.json` depending on your applications structure
 2. start meteor
-3. edit the file `custom.semantic.json` to select only the definitions and themes you want
-4. save the file and it will generate Semantic UI
+3. if you are happy with the default options for Semantic-UI, remove the newly generated `.custom.semantic.json` at this point
+4. otherwise edit `custom.semantic.json` (which has now been populated) to select only the definitions and themes you want
+5. save the file and it will generate Semantic UI
 
 > Note: if you are happy with the default values you will need to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
 
