@@ -26,10 +26,6 @@ definitionsData.data = [
   
     {"name":"table","less":"lib/semantic-ui/src/definitions/collections/table.import.less"},
   
-    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
-  
-    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
-  
     {"name":"button","less":"lib/semantic-ui/src/definitions/elements/button.import.less"},
   
     {"name":"container","less":"lib/semantic-ui/src/definitions/elements/container.import.less"},
@@ -59,6 +55,10 @@ definitionsData.data = [
     {"name":"segment","less":"lib/semantic-ui/src/definitions/elements/segment.import.less"},
   
     {"name":"step","less":"lib/semantic-ui/src/definitions/elements/step.import.less"},
+  
+    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
+  
+    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
   
     {"name":"accordion","less":"lib/semantic-ui/src/definitions/modules/accordion.import.less","js":"lib/semantic-ui/src/definitions/modules/accordion.js"},
   
