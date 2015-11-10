@@ -56,10 +56,6 @@ definitionsData.data = [
   
     {"name":"step","less":"lib/semantic-ui/src/definitions/elements/step.import.less"},
   
-    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
-  
-    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
-  
     {"name":"accordion","less":"lib/semantic-ui/src/definitions/modules/accordion.import.less","js":"lib/semantic-ui/src/definitions/modules/accordion.js"},
   
     {"name":"checkbox","less":"lib/semantic-ui/src/definitions/modules/checkbox.import.less","js":"lib/semantic-ui/src/definitions/modules/checkbox.js"},
@@ -91,6 +87,10 @@ definitionsData.data = [
     {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
     {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
+  
+    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
+  
+    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
   
     {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
   
