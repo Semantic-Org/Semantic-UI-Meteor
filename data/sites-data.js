@@ -16,6 +16,36 @@ sitesData.data = [
   
     {"name":"table","overrides":["lib/semantic-ui/src/site/collections/table.overrides.import.less"],"variables":["lib/semantic-ui/src/site/collections/table.variables.import.less"]},
   
+    {"name":"button","overrides":["lib/semantic-ui/src/site/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/button.variables.import.less"]},
+  
+    {"name":"container","overrides":["lib/semantic-ui/src/site/elements/container.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/container.variables.import.less"]},
+  
+    {"name":"divider","overrides":["lib/semantic-ui/src/site/elements/divider.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/divider.variables.import.less"]},
+  
+    {"name":"flag","overrides":["lib/semantic-ui/src/site/elements/flag.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/flag.variables.import.less"]},
+  
+    {"name":"header","overrides":["lib/semantic-ui/src/site/elements/header.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/header.variables.import.less"]},
+  
+    {"name":"icon","overrides":["lib/semantic-ui/src/site/elements/icon.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/icon.variables.import.less"]},
+  
+    {"name":"image","overrides":["lib/semantic-ui/src/site/elements/image.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/image.variables.import.less"]},
+  
+    {"name":"input","overrides":["lib/semantic-ui/src/site/elements/input.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/input.variables.import.less"]},
+  
+    {"name":"label","overrides":["lib/semantic-ui/src/site/elements/label.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/label.variables.import.less"]},
+  
+    {"name":"list","overrides":["lib/semantic-ui/src/site/elements/list.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/list.variables.import.less"]},
+  
+    {"name":"loader","overrides":["lib/semantic-ui/src/site/elements/loader.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/loader.variables.import.less"]},
+  
+    {"name":"rail","overrides":["lib/semantic-ui/src/site/elements/rail.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/rail.variables.import.less"]},
+  
+    {"name":"reveal","overrides":["lib/semantic-ui/src/site/elements/reveal.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/reveal.variables.import.less"]},
+  
+    {"name":"segment","overrides":["lib/semantic-ui/src/site/elements/segment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/segment.variables.import.less"]},
+  
+    {"name":"step","overrides":["lib/semantic-ui/src/site/elements/step.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/step.variables.import.less"]},
+  
     {"name":"reset","overrides":["lib/semantic-ui/src/site/globals/reset.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/reset.variables.import.less"]},
   
     {"name":"site","overrides":["lib/semantic-ui/src/site/globals/site.overrides.import.less"],"variables":["lib/semantic-ui/src/site/globals/site.variables.import.less"]},
@@ -53,36 +83,6 @@ sitesData.data = [
     {"name":"tab","overrides":["lib/semantic-ui/src/site/modules/tab.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/tab.variables.import.less"]},
   
     {"name":"transition","overrides":["lib/semantic-ui/src/site/modules/transition.overrides.import.less"],"variables":["lib/semantic-ui/src/site/modules/transition.variables.import.less"]},
-  
-    {"name":"button","overrides":["lib/semantic-ui/src/site/elements/button.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/button.variables.import.less"]},
-  
-    {"name":"container","overrides":["lib/semantic-ui/src/site/elements/container.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/container.variables.import.less"]},
-  
-    {"name":"divider","overrides":["lib/semantic-ui/src/site/elements/divider.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/divider.variables.import.less"]},
-  
-    {"name":"flag","overrides":["lib/semantic-ui/src/site/elements/flag.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/flag.variables.import.less"]},
-  
-    {"name":"header","overrides":["lib/semantic-ui/src/site/elements/header.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/header.variables.import.less"]},
-  
-    {"name":"icon","overrides":["lib/semantic-ui/src/site/elements/icon.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/icon.variables.import.less"]},
-  
-    {"name":"image","overrides":["lib/semantic-ui/src/site/elements/image.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/image.variables.import.less"]},
-  
-    {"name":"input","overrides":["lib/semantic-ui/src/site/elements/input.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/input.variables.import.less"]},
-  
-    {"name":"label","overrides":["lib/semantic-ui/src/site/elements/label.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/label.variables.import.less"]},
-  
-    {"name":"list","overrides":["lib/semantic-ui/src/site/elements/list.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/list.variables.import.less"]},
-  
-    {"name":"loader","overrides":["lib/semantic-ui/src/site/elements/loader.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/loader.variables.import.less"]},
-  
-    {"name":"rail","overrides":["lib/semantic-ui/src/site/elements/rail.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/rail.variables.import.less"]},
-  
-    {"name":"reveal","overrides":["lib/semantic-ui/src/site/elements/reveal.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/reveal.variables.import.less"]},
-  
-    {"name":"segment","overrides":["lib/semantic-ui/src/site/elements/segment.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/segment.variables.import.less"]},
-  
-    {"name":"step","overrides":["lib/semantic-ui/src/site/elements/step.overrides.import.less"],"variables":["lib/semantic-ui/src/site/elements/step.variables.import.less"]},
   
     {"name":"ad","overrides":["lib/semantic-ui/src/site/views/ad.overrides.import.less"],"variables":["lib/semantic-ui/src/site/views/ad.variables.import.less"]},
   

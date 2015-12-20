@@ -4,6 +4,10 @@ var definitionsData = {};
 
 definitionsData.data = [
   
+    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
+  
+    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
+  
     {"name":"api","js":"lib/semantic-ui/src/definitions/behaviors/api.js"},
   
     {"name":"colorize","js":"lib/semantic-ui/src/definitions/behaviors/colorize.js"},
@@ -87,10 +91,6 @@ definitionsData.data = [
     {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
     {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
-  
-    {"name":"reset","less":"lib/semantic-ui/src/definitions/globals/reset.import.less"},
-  
-    {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
   
     {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
   
