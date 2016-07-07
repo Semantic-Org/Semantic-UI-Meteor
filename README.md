@@ -5,8 +5,35 @@ This package integrates [Semantic UI](http://semantic-ui.com) into Meteor and le
 
 Installation
 ------------
+### Meteor <1.3
 
     meteor add semantic:ui flemay:less-autoprefixer jquery
+
+Continue to the Usage section.
+
+### Meteor 1.3+
+
+    meteor remove standard-minifier-css
+
+    meteor add semantic:ui juliancwirko:postcss less jquery
+
+Add the following to `package.json`
+```
+{
+  "devDependencies": {
+    "autoprefixer": "^6.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {"browsers": ["last 2 versions"]}
+    }
+  }
+}
+```
+
+After saving the changes to `package.json`, run:
+
+    meteor npm install
 
 Usage
 -----
@@ -88,10 +115,15 @@ Therefore if the file `.custom.semantic.json` does not exist or it is different 
 
 Dependencies
 ------------
-**[flemay:less-autoprefixer](https://atmospherejs.com/flemay/less-autoprefixer)**: Semantic UI needs autoprefixer to be compiled.
+(Meteor <1.3) **[flemay:less-autoprefixer](https://atmospherejs.com/flemay/less-autoprefixer)**: Semantic UI needs autoprefixer to be compiled.
 
 > **Note 1:** You can choose any less-autoprefixer package.
-> **Note 2:** Since the package compiles `LESS` files you don't need the `less` package.
+
+> **Note 2:** Since the flemay:less-autoprefixer package compiles `LESS` files you don't need the `less` package.
+
+(Meteor 1.3+) **[juliancwirko:postcss](https://atmospherejs.com/juliancwirko/postcss)**: Semantic UI needs autoprefixer for adding vendor prefixes.
+
+(Meteor 1.3+) **[less](https://atmospherejs.com/meteor/less)**: is needed to compile the `LESS` files to `CSS` when building.
 
 **[semantic:ui-data](https://atmospherejs.com/semantic/ui-data)** is being used to get Semantic UI files.
 
