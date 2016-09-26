@@ -46,7 +46,7 @@ customSemanticData.requiredThemesNames = function() {
 
 customSemanticData.validate = function(definitionsData, themesData) {
   var throwError = function(name) {
-    throw new Error('definition/theme "' + name + '"" does not exist. Please update your custom.semantic.json file.');
+    throw new Error('definition/theme "' + name + '" does not exist. Please update your custom.semantic.json file.');
   };
   _.each(_.keys(this.data.definitions), function(definitionName) {
     if (!definitionsData.exists(definitionName)) {
