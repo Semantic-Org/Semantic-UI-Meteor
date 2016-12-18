@@ -8,6 +8,6 @@ meteor@1.1.15_1
 modules@0.6.4
 modules-runtime@0.6.4_1
 promise@0.7.2_1
-semantic:ui@2.2.1
-semantic:ui-data@2.2.1
+semantic:ui@2.2.6_5
+semantic:ui-data@2.2.6_4
 underscore@1.0.9
