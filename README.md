@@ -44,6 +44,7 @@ Example: `/client/lib/semantic-ui/custom.semantic.json`.
 3. Edit the file `custom.semantic.json` to select only the definitions and themes you want  
 Example: set `themes` `basic` to `true`, leave `default` as `true`
 4. Save the file and it will generate Semantic UI
+5. Check the [generated-structure table](https://github.com/Semantic-Org/Semantic-UI-Meteor#generated-structure) below for editable files and folders.
 
 > IMPORTANT: If you are happy with the default values you will NEED to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
 
@@ -83,7 +84,7 @@ custom.semantic.json
 
 `custom.semantic.json` is the most important file. If it is empty, `semantic:ui` will generate the content with all the definitions and themes. By default, it sets to true all definitions and the theme "default".
 
-```json
+```javascript
 {
   "definitions": {
     "accordion": true,
@@ -91,16 +92,17 @@ custom.semantic.json
     "api": true,
     ...
   },
-    "themes": {
-      "amazon": false,
-      "basic": false,
-      "bookish": false,
-      "bootstrap3": false,
-      "chubby": false,
-      "classic": false,
-      "default": true,
-      ...
-    }
+  "themes": {
+    "amazon": false,
+    "basic": false,
+    "bookish": false,
+    "bootstrap3": false,
+    "chubby": false,
+    "classic": false,
+    "default": true,
+    ...
+  }
+}
 ```
 
 Changing any value will trigger the package to regenerate the files/folders accordingly.
