@@ -38,11 +38,15 @@ After saving the changes to `package.json`, run:
 Usage
 -----
 
-1. create an empty `custom.semantic.json` file within your client library folder. suggested location of `/client/lib/semantic-ui/custom.semantic.json` depending on your applications structure
-2. start meteor
-3. if you are happy with the default options for Semantic-UI, remove the newly generated `.custom.semantic.json` at this point
-4. otherwise edit `custom.semantic.json` (which has now been populated) to select only the definitions and themes you want
-5. save the file and it will generate Semantic UI
+1. Create an empty `custom.semantic.json` file somewhere in your project. For example `/client/lib/semantic-ui/custom.semantic.json`.
+2. Start meteor
+3. Edit the file `custom.semantic.json` to select only the definitions and themes you want
+4. Save the file and it will generate Semantic UI
+
+> IMPORTANT: If you are happy with the default values you will NEED to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
+
+> NOTE: Another way to use ONLY the default values is to use this package: https://atmospherejs.com/semantic/ui-css
+    meteor add semantic:ui-css
 
 Getting Started & Initializing Modules
 -----
@@ -137,9 +141,9 @@ Generating Trigger
 
 Every time Meteor starts (or refreshes) it calls the package `semantic:ui` to generate Semantic UI.
 
-The package has a simple mechanism based on the difference of `custom.semantic.json` and `.custom.semantic.json` to avoid generating all the time the files and folders.
+The package has a simple mechanism based on the difference of `custom.semantic.json` and `.custom.semantic.json` to avoid generating all the Semantic UI files and folders each time Meteor starts (or refreshes).
 
-Therefore if the file `.custom.semantic.json` does not exist or it is different than `custom.semantic.json` then it will generate Semantic UI.  You need to do one of these to make it work the first time.
+Therefore if the file `.custom.semantic.json` does not exist or it is different from `custom.semantic.json` then it will generate Semantic UI.
 
 Dependencies
 ------------
