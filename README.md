@@ -44,12 +44,40 @@ Usage
 4. otherwise edit `custom.semantic.json` (which has now been populated) to select only the definitions and themes you want
 5. save the file and it will generate Semantic UI
 
+Getting Started & Initializing Modules
+-----
+Semantic UI requries some components to be initialized or they will not work (Dropdowns, Menus, Accordions, etc)
+Refer to the Usage sections in a module on how to initialize each element eg: [Semantic UI Accordion Usage](http://semantic-ui.com/modules/accordion.html#/usage)
+
+Example of initializing a dropdown using a template helper
+```javascript
+Template.myDropdown.rendered = function() {
+  // be sure to use this.$ so it is scoped to the template instead of to the window
+  this.$('.ui.dropdown').dropdown({on: 'hover'});
+  // other SUI modules initialization
+};
+```
+
+Abstracted version which you use on any template helper
+```javascript
+initAccordions(templ) {
+  template.$('.ui.accordion').accordion();
+}
+initDropdowns(template) {
+  template.$('.ui.dropdown').dropdown({on: 'hover'});
+}
+
+Template.myDropdown.rendered = function() {
+  initDropdowns(this);
+}
+```
+
 custom.semantic.json
 --------------------
 
 `custom.semantic.json` is the most important file. If it is empty, `semantic:ui` will generate the content with all the definitions and themes. By default, it sets to true all definitions and the theme "default".
 
-```
+```json
 {
   "definitions": {
     "accordion": true,
