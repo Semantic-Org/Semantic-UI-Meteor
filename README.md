@@ -82,7 +82,7 @@ Template.myDropdown.rendered = function() {
 custom.semantic.json
 --------------------
 
-`custom.semantic.json` is the most important file. If it is empty, `semantic:ui` will generate the content with all the definitions and themes. By default, it sets to true all definitions and the theme "default".
+`custom.semantic.json` is the most important file. If it is empty, `semantic:ui` will generate the content with all the definitions and themes. By default, it sets to true all definitions and the core-theme "default"(which should always be true).
 
 ```javascript
 {
@@ -104,8 +104,20 @@ custom.semantic.json
   }
 }
 ```
-
 Changing any value will trigger the package to regenerate the files/folders accordingly.
+
+Be aware when you strip away definitions. The `site` definition is always needed and so is the `default` theme. Here an example of the most minimal `custom.semantic.json` file.
+```javascript
+{
+  "definitions": {
+    "site": true // <- needs to be true
+  },
+  "themes": {
+    "basic": true, // <- a theme
+    "default": true // <- core "theme" needs to be true
+  }
+}
+```
 
 Generated Structure
 -------------------
