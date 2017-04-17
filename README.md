@@ -67,16 +67,16 @@ Template.myDropdown.rendered = function() {
 
 Abstracted version which you use on any template helper
 ```javascript
-initAccordions(templ) {
+function initAccordions(template) {
   template.$('.ui.accordion').accordion();
 }
-initDropdowns(template) {
+function initDropdowns(template) {
   template.$('.ui.dropdown').dropdown({on: 'hover'});
 }
 
-Template.myDropdown.rendered = function() {
+Template.myDropdowns.onRendered({
   initDropdowns(this);
-}
+})
 ```
 
 custom.semantic.json
