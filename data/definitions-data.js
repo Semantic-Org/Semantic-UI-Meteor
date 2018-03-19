@@ -10,25 +10,9 @@ definitionsData.data = [
   
     {"name":"api","js":"lib/semantic-ui/src/definitions/behaviors/api.js"},
   
-    {"name":"colorize","js":"lib/semantic-ui/src/definitions/behaviors/colorize.js"},
-  
     {"name":"form","js":"lib/semantic-ui/src/definitions/behaviors/form.js","less":"lib/semantic-ui/src/definitions/collections/form.import.less"},
   
-    {"name":"state","js":"lib/semantic-ui/src/definitions/behaviors/state.js"},
-  
     {"name":"visibility","js":"lib/semantic-ui/src/definitions/behaviors/visibility.js"},
-  
-    {"name":"visit","js":"lib/semantic-ui/src/definitions/behaviors/visit.js"},
-  
-    {"name":"breadcrumb","less":"lib/semantic-ui/src/definitions/collections/breadcrumb.import.less"},
-  
-    {"name":"grid","less":"lib/semantic-ui/src/definitions/collections/grid.import.less"},
-  
-    {"name":"menu","less":"lib/semantic-ui/src/definitions/collections/menu.import.less"},
-  
-    {"name":"message","less":"lib/semantic-ui/src/definitions/collections/message.import.less"},
-  
-    {"name":"table","less":"lib/semantic-ui/src/definitions/collections/table.import.less"},
   
     {"name":"button","less":"lib/semantic-ui/src/definitions/elements/button.import.less"},
   
@@ -95,6 +79,16 @@ definitionsData.data = [
     {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
     {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
+  
+    {"name":"breadcrumb","less":"lib/semantic-ui/src/definitions/collections/breadcrumb.import.less"},
+  
+    {"name":"grid","less":"lib/semantic-ui/src/definitions/collections/grid.import.less"},
+  
+    {"name":"menu","less":"lib/semantic-ui/src/definitions/collections/menu.import.less"},
+  
+    {"name":"message","less":"lib/semantic-ui/src/definitions/collections/message.import.less"},
+  
+    {"name":"table","less":"lib/semantic-ui/src/definitions/collections/table.import.less"},
   
     {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
   
