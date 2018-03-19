@@ -64,18 +64,6 @@ definitionsData.data = [
   
     {"name":"site","less":"lib/semantic-ui/src/definitions/globals/site.import.less","js":"lib/semantic-ui/src/definitions/globals/site.js"},
   
-    {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
-  
-    {"name":"card","less":"lib/semantic-ui/src/definitions/views/card.import.less"},
-  
-    {"name":"comment","less":"lib/semantic-ui/src/definitions/views/comment.import.less"},
-  
-    {"name":"feed","less":"lib/semantic-ui/src/definitions/views/feed.import.less"},
-  
-    {"name":"item","less":"lib/semantic-ui/src/definitions/views/item.import.less"},
-  
-    {"name":"statistic","less":"lib/semantic-ui/src/definitions/views/statistic.import.less"},
-  
     {"name":"accordion","less":"lib/semantic-ui/src/definitions/modules/accordion.import.less","js":"lib/semantic-ui/src/definitions/modules/accordion.js"},
   
     {"name":"checkbox","less":"lib/semantic-ui/src/definitions/modules/checkbox.import.less","js":"lib/semantic-ui/src/definitions/modules/checkbox.js"},
@@ -107,6 +95,18 @@ definitionsData.data = [
     {"name":"tab","less":"lib/semantic-ui/src/definitions/modules/tab.import.less","js":"lib/semantic-ui/src/definitions/modules/tab.js"},
   
     {"name":"transition","less":"lib/semantic-ui/src/definitions/modules/transition.import.less","js":"lib/semantic-ui/src/definitions/modules/transition.js"},
+  
+    {"name":"ad","less":"lib/semantic-ui/src/definitions/views/ad.import.less"},
+  
+    {"name":"card","less":"lib/semantic-ui/src/definitions/views/card.import.less"},
+  
+    {"name":"comment","less":"lib/semantic-ui/src/definitions/views/comment.import.less"},
+  
+    {"name":"feed","less":"lib/semantic-ui/src/definitions/views/feed.import.less"},
+  
+    {"name":"item","less":"lib/semantic-ui/src/definitions/views/item.import.less"},
+  
+    {"name":"statistic","less":"lib/semantic-ui/src/definitions/views/statistic.import.less"},
   
 ];
 
