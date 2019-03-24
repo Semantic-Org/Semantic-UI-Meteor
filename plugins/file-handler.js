@@ -7,21 +7,21 @@ fileHandler = {};
 fileHandler.getTextFileContents = function(paths) {
   var contents = [];
   _.each(paths, function(path) {
-     contents.push(semanticUiDataPackage.getTextFile(path));
+     contents.push(fomanticUiDataPackage.getTextFile(path));
   });
   return contents;
 };
 
 fileHandler.getTextFile = function(path) {
-  return semanticUiDataPackage.getTextFile(path);
+  return fomanticUiDataPackage.getTextFile(path);
 };
 
 fileHandler.getBinaryFile = function(path) {
-  return semanticUiDataPackage.getBinaryFile(path);
+  return fomanticUiDataPackage.getBinaryFile(path);
 };
 
 fileHandler.getBinaryFileBuffer = function(path) {
-  var binaryContent = semanticUiDataPackage.getBinaryFile(path);
+  var binaryContent = fomanticUiDataPackage.getBinaryFile(path);
   return new Buffer(binaryContent);
 };
 

@@ -3,18 +3,18 @@ const path = Npm.require('path');
 const diff = Npm.require('diff');
 
 Plugin.registerCompiler({
-  extensions: ['semantic.json'],
+  extensions: ['fomantic.json'],
   archMatching: 'web'
-}, () => new SemanticGenerator());
+}, () => new FomanticGenerator());
 
-class SemanticGenerator {
+class FomanticGenerator {
   processFilesForTarget(files) {
     var customJsonFile = files[0];
     try {
       generate(customJsonFile);
     } catch (error) {
       customJsonFile.error({
-        message: "Semantic UI Generator: " + error.message,
+        message: "Fomantic UI Generator: " + error.message,
         sourcePath: error.filename || customJsonFile.getPathInPackage(),
         line: error.line,
         column: error.column
@@ -29,20 +29,20 @@ var generate = function(customJsonFile) {
   var basePath = customJsonFile.getDirname();
 
   if (customJsonContent !== '') {
-    semanticUiPackage.customSemanticData.data = JSON.parse(customJsonContent);
+    fomanticUiPackage.customFomanticData.data = JSON.parse(customJsonContent);
 
     if (isGeneratingNeeded(basePath, customJsonContent)) {
-      semanticUiPackage.customSemanticData.validate(semanticUiPackage.definitionsData, semanticUiPackage.themesData);
-      definitionsGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.definitionsData);
-      themesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData);
-      sitesGenerator.generate(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.sitesData);
-      fileHandler.writeTextFile(basePath, '.custom.semantic.json', customJsonContent);
+      fomanticUiPackage.customFomanticData.validate(fomanticUiPackage.definitionsData, fomanticUiPackage.themesData);
+      definitionsGenerator.generate(basePath, fomanticUiPackage.customFomanticData, fomanticUiPackage.definitionsData);
+      themesGenerator.generate(basePath, fomanticUiPackage.customFomanticData, fomanticUiPackage.themesData);
+      sitesGenerator.generate(basePath, fomanticUiPackage.customFomanticData, fomanticUiPackage.sitesData);
+      fileHandler.writeTextFile(basePath, '.custom.fomantic.json', customJsonContent);
     }
     // Always generate assets
-    themesGenerator.generateAssets(basePath, semanticUiPackage.customSemanticData, semanticUiPackage.themesData, customJsonFile);
+    themesGenerator.generateAssets(basePath, fomanticUiPackage.customFomanticData, fomanticUiPackage.themesData, customJsonFile);
   } else {
-    customJsonGenerator.generate(basePath, semanticUiPackage.definitionsData, semanticUiPackage.themesData);
-    fileHandler.writeTextFile(basePath, '.custom.semantic.json', fileHandler.readTextFile(basePath, 'custom.semantic.json'));
+    customJsonGenerator.generate(basePath, fomanticUiPackage.definitionsData, fomanticUiPackage.themesData);
+    fileHandler.writeTextFile(basePath, '.custom.fomantic.json', fileHandler.readTextFile(basePath, 'custom.fomantic.json'));
   }
 };
 
@@ -50,11 +50,11 @@ var isGeneratingNeeded = function(basePath, customJsonContent) {
   if (customJsonContent === '') {
     return true;
   }
-  if (!fileHandler.fileExists(basePath, '.custom.semantic.json')) {
+  if (!fileHandler.fileExists(basePath, '.custom.fomantic.json')) {
     return true;
   }
 
-  var dotCustomJsonContent = fileHandler.readTextFile(basePath, '.custom.semantic.json');
+  var dotCustomJsonContent = fileHandler.readTextFile(basePath, '.custom.fomantic.json');
 
   var dotCustomJson;
   try {

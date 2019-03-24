@@ -12,6 +12,6 @@ meteor@1.8.2
 modules@0.11.3
 modules-runtime@0.9.1
 promise@0.10.1
-semantic:ui@2.3.1
-semantic:ui-data@2.3.1
+fomantic:ui@2.3.1
+fomantic:ui-data@2.3.1
 url@1.2.0

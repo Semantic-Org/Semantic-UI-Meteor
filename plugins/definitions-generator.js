@@ -6,26 +6,26 @@ definitionsGenerator = {};
 /**
   Generates the definitions folder.
 */
-definitionsGenerator.generate = function(basePath, customSemanticData, definitionsData) {
+definitionsGenerator.generate = function(basePath, customFomanticData, definitionsData) {
   cleanUp(basePath);
-  var definitionsfiles = requiredDefinitionsfiles(definitionsData, customSemanticData);
+  var definitionsfiles = requiredDefinitionsfiles(definitionsData, customFomanticData);
   var files = definitionsfiles.less.concat(definitionsfiles.js);
   _.each(files, function(filePath) {
     createDefinitionsFile(filePath, basePath);
   });
-  createSemanticLessFile(basePath, customSemanticData);
+  createFomanticLessFile(basePath, customFomanticData);
 };
 
 var cleanUp = function(basePath) {
   fileHandler.removeDir(path.join(basePath, 'definitions'));
-  fileHandler.removeFile(path.join(basePath, 'semantic.less'));
+  fileHandler.removeFile(path.join(basePath, 'fomantic.less'));
 };
 
-var createSemanticLessFile = function(basePath, customSemanticData) {
-  var file = fileHandler.getTextFile(semanticUiPackage.definitionsData.semanticLessFile);
+var createFomanticLessFile = function(basePath, customFomanticData) {
+  var file = fileHandler.getTextFile(fomanticUiPackage.definitionsData.fomanticLessFile);
   var lines = file.split('\n');
   var newLines = [];
-  var definitionsNames = customSemanticData.requiredDefinitionsNames();
+  var definitionsNames = customFomanticData.requiredDefinitionsNames();
   _.each(lines, function(l) {
     if (l.match(/@import/)) {
       var matchedDefinitionName = _.find(definitionsNames, function(d) {
@@ -38,7 +38,7 @@ var createSemanticLessFile = function(basePath, customSemanticData) {
       newLines.push(l);
     }
   });
-  fileHandler.writeTextFile(basePath, 'semantic.less', newLines.join('\n'));
+  fileHandler.writeTextFile(basePath, 'fomantic.less', newLines.join('\n'));
 };
 
 var createDefinitionsFile = function(sourcePath, basePath) {
@@ -47,10 +47,10 @@ var createDefinitionsFile = function(sourcePath, basePath) {
   fileHandler.writeTextFile(basePath, relativePath, content);
 };
 
-var requiredDefinitionsfiles = function(definitionsData, customSemanticData) {
+var requiredDefinitionsfiles = function(definitionsData, customFomanticData) {
   var files = {};
-  files.less = customSemanticData.filterDefinitions(definitionsData.lessFilePaths());
-  files.js = customSemanticData.filterDefinitions(definitionsData.jsFilePaths());
+  files.less = customFomanticData.filterDefinitions(definitionsData.lessFilePaths());
+  files.js = customFomanticData.filterDefinitions(definitionsData.jsFilePaths());
 
   return files;
 };

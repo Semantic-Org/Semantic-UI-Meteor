@@ -7,11 +7,11 @@ sitesGenerator = {};
 /**
   Generates the site folder if it does not exist.
 */
-sitesGenerator.generate = function(basePath, customSemanticData, sitesData) {
+sitesGenerator.generate = function(basePath, customFomanticData, sitesData) {
   if (fs.existsSync(path.join(basePath, 'site'))) {
     return;
   }
-  var sitesFiles = requireSitesFiles(sitesData, customSemanticData);
+  var sitesFiles = requireSitesFiles(sitesData, customFomanticData);
   var files = sitesFiles.overrides.concat(sitesFiles.variables);
   _.each(files, function(filePath) {
     createSitesFile(filePath, basePath);
@@ -24,16 +24,16 @@ var createSitesFile = function(sourcePath, basePath) {
   fileHandler.writeTextFile(basePath, relativePath, content);
 };
 
-var requireSitesFiles = function(sitesData, customSemanticData) {
+var requireSitesFiles = function(sitesData, customFomanticData) {
   var files = {};
 
   files.overrides = sitesData.overridesFilePaths();
   files.variables = sitesData.variablesFilePaths();
   // Provide a custom matcher function because definition has name "site" and all the path has "_site".
-  files.overrides = customSemanticData.filterDefinitions(files.overrides, function(string, name) {
+  files.overrides = customFomanticData.filterDefinitions(files.overrides, function(string, name) {
     return string.search(name + ".overrides") != -1;
   });
-  files.variables = customSemanticData.filterDefinitions(files.variables, function(string, name) {
+  files.variables = customFomanticData.filterDefinitions(files.variables, function(string, name) {
     return string.search(name + ".variables") != -1;
   });
   return files;

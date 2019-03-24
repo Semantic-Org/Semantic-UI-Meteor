@@ -1,13 +1,13 @@
 var _ = Npm.require('lodash');
 
-var customSemanticData = {};
-customSemanticData.data = {};
+var customFomanticData = {};
+customFomanticData.data = {};
 
-customSemanticData.filterDefinitions = function(strings, matcherFunc) {
+customFomanticData.filterDefinitions = function(strings, matcherFunc) {
   return filter(this.requiredDefinitionsNames(), strings, matcherFunc);
 };
 
-customSemanticData.requiredDefinitionsNames = function() {
+customFomanticData.requiredDefinitionsNames = function() {
   var definitionsNames = _.keys(this.data.definitions);
   var that = this;
   return _.filter(definitionsNames, function(name) {
@@ -15,7 +15,7 @@ customSemanticData.requiredDefinitionsNames = function() {
   });
 };
 
-customSemanticData.filterThemes = function(strings, matcherFunc) {
+customFomanticData.filterThemes = function(strings, matcherFunc) {
   return filter(this.requiredThemesNames(), strings, matcherFunc);
 };
 
@@ -36,7 +36,7 @@ var filter = function(names, strings, matcherFunc) {
   });
 };
 
-customSemanticData.requiredThemesNames = function() {
+customFomanticData.requiredThemesNames = function() {
   var themesNames = _.keys(this.data.themes);
   var that = this;
   return _.filter(themesNames, function(name) {
@@ -44,9 +44,9 @@ customSemanticData.requiredThemesNames = function() {
   });
 };
 
-customSemanticData.validate = function(definitionsData, themesData) {
+customFomanticData.validate = function(definitionsData, themesData) {
   var throwError = function(name) {
-    throw new Error('definition/theme "' + name + '" does not exist. Please update your custom.semantic.json file.');
+    throw new Error('definition/theme "' + name + '" does not exist. Please update your custom.fomantic.json file.');
   };
   _.each(_.keys(this.data.definitions), function(definitionName) {
     if (!definitionsData.exists(definitionName)) {
@@ -60,4 +60,4 @@ customSemanticData.validate = function(definitionsData, themesData) {
   });
 };
 
-semanticUiPackage.customSemanticData = customSemanticData;
+fomanticUiPackage.customFomanticData = customFomanticData;
