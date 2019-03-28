@@ -3,6 +3,8 @@ Fomantic UI for Meteor
 
 This package integrates [Fomantic UI](https://fomantic-ui.com) into Meteor and lets you configure what parts you need.
 
+Why Fomantic? Semantic as a project has a wonderful set of tools, however it is no longer directly maintained.  Fomantic is updating packages currently, and hopes to merge back to Semantic-ui at some point.  However as updates happen on Fomantic, it may eventually replace the Semantic-ui project. In the meantime, this provides a way to include up to date versions of Semantic-UI.
+
 # INITIAL COMMIT! WIP! 
 This is getting a makeover on the fomantic-conversion branch.  Master is still a basic fork. 
 Updates will be merged here once a core set of conversions are made.
@@ -15,7 +17,7 @@ Installation
 ------------
 ### Meteor <1.3
 
-    meteor add fomantic:ui flemay:less-autoprefixer
+    meteor add mrmowgli:fomantic-ui flemay:less-autoprefixer
 
 Continue to the Usage section.
 
@@ -23,7 +25,7 @@ Continue to the Usage section.
 
     meteor remove standard-minifier-css
 
-    meteor add fomantic:ui juliancwirko:postcss less 
+    meteor add mrmowgli:fomantic-ui juliancwirko:postcss less 
 
 Add the following to `package.json`
 ```

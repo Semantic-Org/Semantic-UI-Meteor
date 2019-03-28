@@ -3,7 +3,7 @@
 */
 
 Package.describe({
-  name: 'fomantic:ui',
+  name: 'mrmowgli:fomantic-ui',
   version: '2.3.2',
   summary: 'Unofficial Fomantic UI Integration for Meteor',
   git: 'git@github.com:mrmowgli/Fomantic-UI-Meteor.git',
@@ -15,7 +15,7 @@ Package.registerBuildPlugin({
   use: [
     'ecmascript@0.1.5',
     'ejson@1.0.6',
-    'mrmowgli:ui-data@2.3.1'
+    'mrmowgli:fomantic-ui-data@2.3.2'
   ],
   sources: [
     'fomantic-ui.js',
