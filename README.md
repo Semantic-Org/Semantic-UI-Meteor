@@ -21,7 +21,9 @@ Add the following to `package.json`
 ```
 {
   "devDependencies": {
-    "autoprefixer": "^6.3.1"
+    "autoprefixer": "^6.3.1",
+    "postcss": "^6.0.22",
+    "postcss-load-config": "^1.2.0"
   },
   "postcss": {
     "plugins": {
