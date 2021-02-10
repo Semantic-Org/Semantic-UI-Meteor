@@ -48,9 +48,9 @@ Example: set `themes` `basic` to `true`, leave `default` as `true`
 4. Save the file and it will generate Semantic UI
 5. Check the [generated-structure table](https://github.com/Semantic-Org/Semantic-UI-Meteor#generated-structure) below for editable files and folders.
 
-> IMPORTANT: If you are happy with the default values you will NEED to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
+**IMPORTANT**: If you are happy with the default values you will NEED to remove `.custom.semantic.json` to generate Semantic UI. (see Generating Trigger)
 
-> NOTE: Another way to use ONLY the default values is to use this package: https://atmospherejs.com/semantic/ui-css
+NOTE: Another way to use ONLY the default values is to use this package: https://atmospherejs.com/semantic/ui-css
     meteor add semantic:ui-css
 
 Getting Started & Initializing Modules
