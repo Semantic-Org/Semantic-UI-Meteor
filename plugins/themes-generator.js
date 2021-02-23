@@ -7,18 +7,18 @@ themesGenerator = {};
 /**
   Always generates assets everytime the server restarts or refreshes
 */
-themesGenerator.generateAssets = function(basePath, customSemanticData, themesData, customJsonFile) {
-  var themesFiles = requiredThemesFiles(themesData, customSemanticData);
+themesGenerator.generateAssets = function(basePath, customFomanticData, themesData, customJsonFile) {
+  var themesFiles = requiredThemesFiles(themesData, customFomanticData);
   createAssetFiles(customJsonFile, themesFiles.assets);
 };
 
 /**
   Generates the themes folder.
 */
-themesGenerator.generate = function(basePath, customSemanticData, themesData) {
+themesGenerator.generate = function(basePath, customFomanticData, themesData) {
   cleanUp(basePath);
 
-  var themesFiles = requiredThemesFiles(themesData, customSemanticData);
+  var themesFiles = requiredThemesFiles(themesData, customFomanticData);
   var files = themesFiles.overrides.concat(themesFiles.variables);
   _.each(files, function(filePath) {
     createThemeFile(filePath, basePath);
@@ -63,19 +63,19 @@ var createThemeFile = function(sourcePath, basePath) {
   fileHandler.writeTextFile(basePath, relativePath, content);
 };
 
-var requiredThemesFiles = function(themesData, customSemanticData) {
+var requiredThemesFiles = function(themesData, customFomanticData) {
   var files = {};
   files.overrides = themesData.overridesFilePaths();
   files.variables = themesData.variablesFilePaths();
   files.assets = themesData.assetsFilePaths();
 
-  files.overrides = customSemanticData.filterThemes(files.overrides);
-  files.variables = customSemanticData.filterThemes(files.variables);
-  files.assets = customSemanticData.filterThemes(files.assets);
+  files.overrides = customFomanticData.filterThemes(files.overrides);
+  files.variables = customFomanticData.filterThemes(files.variables);
+  files.assets = customFomanticData.filterThemes(files.assets);
 
-  files.overrides = customSemanticData.filterDefinitions(files.overrides);
-  files.variables = customSemanticData.filterDefinitions(files.variables);
-  files.assets = customSemanticData.filterDefinitions(files.assets, function(string, name) {
+  files.overrides = customFomanticData.filterDefinitions(files.overrides);
+  files.variables = customFomanticData.filterDefinitions(files.variables);
+  files.assets = customFomanticData.filterDefinitions(files.assets, function(string, name) {
     // icon and flag in assets end with a 's'
     var regex = new RegExp("\\W" + name + "\\w\\W", 'g');
     return string.match(regex) !== null;

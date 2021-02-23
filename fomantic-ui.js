@@ -1,2 +1,2 @@
 // one global variable (namespace)
-semanticUiPackage = {};
+fomanticUiPackage = {};

@@ -10,7 +10,7 @@ customJsonGenerator.generate = function(basePath, definitionsData, themesData) {
   var customJson = {};
   addDefinitions(customJson, definitionsData);
   addThemes(customJson, themesData);
-  createCustomSemanticJsonFile(basePath, customJson);
+  createCustomFomanticJsonFile(basePath, customJson);
 };
 
 var addDefinitions = function(customJson, definitionsData) {
@@ -28,6 +28,6 @@ var addThemes = function(customJson, themesData) {
   customJson.themes.default = true;
 };
 
-var createCustomSemanticJsonFile = function(basePath, customJson) {
-  fileHandler.writeTextFile(basePath, "custom.semantic.json", EJSON.stringify(customJson, {indent: true, canonical: true}));
+var createCustomFomanticJsonFile = function(basePath, customJson) {
+  fileHandler.writeTextFile(basePath, "custom.fomantic.json", EJSON.stringify(customJson, {indent: true, canonical: true}));
 };
